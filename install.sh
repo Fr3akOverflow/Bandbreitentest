@@ -65,6 +65,7 @@ ARCH=$(uname -m)
 case "$ARCH" in
     x86_64)  SPEEDTEST_ARCH="x86_64" ;;
     aarch64) SPEEDTEST_ARCH="aarch64" ;;
+    armv6l|armv7l|armhf) SPEEDTEST_ARCH="armhf" ;;
     *)
         echo "Nicht unterstützte Architektur: $ARCH"
         exit 1
